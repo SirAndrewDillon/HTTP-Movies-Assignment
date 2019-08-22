@@ -9,46 +9,84 @@ app.use(CORS());
 
 let movies = [
   {
-    id: 0,
-    title: "The Godfather",
+    id: 71,
+    title: "Fast Times at Ridgemont High",
     director: "Francis Ford Coppola",
     metascore: 100,
-    stars: ["Marlon Brando", "Al Pacino", "Robert Duvall"]
+    image: "http://www.gstatic.com/tv/thumb/v22vodart/6079/p6079_v_v8_ae.jpg",
+    stars: ["Sean Penn ", "Phoebe Cates ", "Judge Reinhold "]
   },
   {
-    id: 1,
+    id: 96,
     title: "Star Wars",
     director: "George Lucas",
     metascore: 92,
+    image: "https://mvpo.us/img/P5868.jpg",
     stars: ["Mark Hamill", "Harrison Ford", "Carrie Fisher"]
   },
   {
-    id: 2,
-    title: "The Lord of the Rings: The Fellowship of the Ring",
+    id: 87,
+    title: "Animal House",
     director: "Peter Jackson",
     metascore: 92,
-    stars: ["Elijah Wood", "Ian McKellen", "Orlando Bloom"]
+    image: "http://www.gstatic.com/tv/thumb/v22vodart/3642/p3642_v_v8_ae.jpg",
+    stars: ["John Belushi", "Kevin Bacon", "Bruce McGill"]
   },
   {
-    id: 3,
-    title: "Terminator 2: Judgement Day",
+    id: 44,
+    title: "Terminator 3: Rise of the Machines",
     director: "James Cameron",
     metascore: 94,
-    stars: ["Arnold Schwarzenegger", "Edward Furlong", "Linda Hamilton"]
+    image: "http://www.gstatic.com/tv/thumb/v22vodart/32090/p32090_v_v8_aa.jpg",
+    stars: ["Arnold Schwarzenegger", "Nick Stahl", "Claire Danes"]
   },
   {
-    id: 4,
-    title: "Dumb and Dumber",
-    director: "The Farely Brothers",
-    metascore: 76,
-    stars: ["Jim Carrey", "Jeff Daniels", "Lauren Holly"]
+    id: 19,
+    title: "Back to the Future",
+    director: "Robert Zemeckis ",
+    metascore: 99,
+    image: "http://www.gstatic.com/tv/thumb/v22vodart/8717/p8717_v_v8_an.jpg",
+    stars: ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"]
   },
   {
-    id: 5,
-    title: "Tombstone",
-    director: "George P. Cosmatos",
-    metascore: 89,
-    stars: ["Kurt Russell", "Bill Paxton", "Sam Elliot"]
+    id: 12,
+    title: "Ferris Bueller's Day Off",
+    director: "John Hughes",
+    metascore: 95,
+    image: "http://www.gstatic.com/tv/thumb/v22vodart/9316/p9316_v_v8_aa.jpg",
+    stars: ["Matthew Broderick", "Alan Ruck", "Charlie Sheen"]
+  },
+  {
+    id: 86,
+    title: "Weird Science",
+    director: "John Hughes",
+    metascore: 92,
+    image: "http://www.gstatic.com/tv/thumb/v22vodart/9273/p9273_v_v8_ac.jpg",
+    stars: ["Anthony Michael Hall", "Kelly LeBrock", "Bill Paxton"]
+  },
+  {
+    id: 42,
+    title: "Pulp Fiction",
+    director: "John Hughes",
+    metascore: 98,
+    image: "http://www.gstatic.com/tv/thumb/v22vodart/15684/p15684_v_v8_an.jpg",
+    stars: ["John Travolta", "Bruce Willis", "Samuel L. Jackson"]
+  },
+  {
+    id: 99,
+    title: "Se7en",
+    director: "David Fincher",
+    metascore: 94,
+    image: "http://www.gstatic.com/tv/thumb/v22vodart/17198/p17198_v_v8_ac.jpg",
+    stars: ["Morgan Freeman", "Brad Pitt", "Gwyneth Paltrow"]
+  },
+  {
+    id: 29,
+    title: "Full Metal Jacket",
+    director: "Stanley Kubrick",
+    metascore: 96,
+    image: "http://www.gstatic.com/tv/thumb/v22vodart/10114/p10114_v_v8_ag.jpg",
+    stars: ["Matthew Modine", "R. Lee Ermey", "Vincent D'Onofrio"]
   }
 ];
 
@@ -103,7 +141,7 @@ app.delete("/api/movies/:id", (req, res) => {
   res.status(202).send(req.params.id);
 });
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   res.send("App is working 👍");
 });
 
